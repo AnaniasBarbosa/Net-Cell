@@ -1,0 +1,124 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF;
+    outline: none;
+    font-family:Arial, Helvetica, sans-serif;
+    caret-color: transparent;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+header .container {
+    padding-right: 8%;
+    padding-left: 8%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#7DB4B5;
+    /* background-color: lightskyblue; */
+}
+
+header nav .item {
+    font-size: 18px;
+    padding-right: 8px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: 0.5s ease all;
+}
+
+header nav .item:hover {
+    color: white;
+}
+
+header nav .consulta {
+    padding-left: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 5vh;
+    width: 23%;
+    font-weight: bold;
+    caret-color: currentColor;
+    transition: 150ms ease-out;
+}
+
+header nav .consulta:focus {
+    outline:darkturquoise solid 5px;
+}
+
+/* Celular principal da semana */
+.main .cell-principal{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: baseline;
+    background: url("../IMG/principal/iphone\ 13.jpg") no-repeat space;
+    height: 550px;
+}
+.main .cell-principal .desc{ 
+    background-color:#E0EFF1;
+    padding: 2%;
+    width: 33%;
+    height: 85vh;
+    margin-top: 1%;
+    margin-right: 1%;
+    border-radius: 10px;
+}
+.desc .titulo-princ {
+    margin-bottom: 5%;
+}
+.desc .texto-desc {
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+/* MENU SUSPENSO */
+ul.menu-drop{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+a.drop-item {
+    color: black;
+    padding: 12px 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+A.drop-item:hover {
+    background-color:#7DB4B5;
+    color: #FFF;
+}
+/* Letreiro */
+.letreiro .letreiro-text {
+    padding: 4px;
+    margin: 0%;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1);
+    background-color: gainsboro;
+    border: solid gainsboro 3px;
+    text-align: center;
+}
+
+
+/* Carousel */
+.box-cell {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel {
+    margin-top: 10px;
+}
